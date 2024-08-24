@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cervical-cancer-prediction
+Version: 0.1.0
+Summary: We tested several models to predict whether a women has cervical cancer or not
+Author: Aastha Luthra
+Author-email: aasthaluthraa@gmail.com
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: seaborn
+Requires-Dist: matplotlib
+Requires-Dist: scikit.learn
+Requires-Dist: xgboost
+Requires-Dist: flask

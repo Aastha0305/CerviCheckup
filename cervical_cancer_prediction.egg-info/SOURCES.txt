@@ -1,0 +1,6 @@
+setup.py
+cervical_cancer_prediction.egg-info/PKG-INFO
+cervical_cancer_prediction.egg-info/SOURCES.txt
+cervical_cancer_prediction.egg-info/dependency_links.txt
+cervical_cancer_prediction.egg-info/requires.txt
+cervical_cancer_prediction.egg-info/top_level.txt
