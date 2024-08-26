@@ -5,10 +5,10 @@ from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 from src.exception import CustomException
 from src.logger import logging
-from src.components.data_transformation import DataTransformation
-from src.components.data_transformation import datatransformationconfig
-from src.components.model_trainer import ModelTrainerConfig
-from src.components.model_trainer import ModelTrainer
+from src.components.data_transformation import DataTransformation # type: ignore
+from src.components.data_transformation import datatransformationconfig# type: ignore  # noqa: F401
+from src.components.model_trainer import ModelTrainerConfig # type: ignore  # noqa: F401
+from src.components.model_trainer import ModelTrainer# type: ignore
 import pandas as pd
 
 #Step01: first we will create a class data_ingestion_config which will define the paths to store the raw data,train data, and test data

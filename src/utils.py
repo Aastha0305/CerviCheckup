@@ -2,9 +2,9 @@
 
 import os
 import sys
-import pandas
-import numpy
-import dill
+import pandas# noqa: F401
+import numpy# noqa: F401
+import dill  # noqa: F401
 import pickle
 from sklearn.metrics import r2_score
 from sklearn.model_selection import GridSearchCV
@@ -38,7 +38,7 @@ def evaluate_models(X_train,y_train,X_test,y_test,models,params):
             y_train_pred = model.predict(X_train)
             y_test_pred =  model.predict(X_test)
             #calculating the r2_score oor the train and test data for  the model
-            train_model_score = r2_score(y_train,y_train_pred)
+            train_model_score = r2_score(y_train,y_train_pred)  # noqa: F841
             test_model_score = r2_score(y_test,y_test_pred)
                 #appending in the report
             report[list(models.keys())[i]]= test_model_score
