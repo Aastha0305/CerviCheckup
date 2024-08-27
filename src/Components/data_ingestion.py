@@ -1,12 +1,13 @@
 #importing the required libraries
 import os
 import sys
+sys.path.insert(0, 'C:/Users/Jatin/Desktop/Aastha/Python-ml/project')
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 from src.exception import CustomException
 from src.logger import logging
 from src.components.data_transformation import DataTransformation # type: ignore
-from src.components.data_transformation import datatransformationconfig# type: ignore  # noqa: F401
+from src.components.data_transformation import DataTransformationConfig# type: ignore  # noqa: F401
 from src.components.model_trainer import ModelTrainerConfig # type: ignore  # noqa: F401
 from src.components.model_trainer import ModelTrainer# type: ignore
 import pandas as pd
@@ -24,7 +25,7 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         logging.info("Entered the Data Ingestion method or componenet")
         try:
-            df = pd.read_csv(r'Notebook\data\cervicalcancer.csv')
+            df = pd.read_csv(r'Notebooks\data\cervicalcancer.csv')
             logging.info("Read the data set")
             os.makedirs(os.path.dirname(self.ingestion_config.train_file_path),exist_ok = True)
             #Step 02: Converting the data into csv and stroing to the paths 

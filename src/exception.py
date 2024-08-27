@@ -1,5 +1,8 @@
 import sys
-from src.logger import logging  # noqa: F401
+
+sys.path.insert(0, 'C:/Users/Jatin/Desktop/Aastha/Python-ml/project')
+
+from src.logger import logging 
 
 def error_message_detail(error,error_detail:sys):
     _,_,exc_tb=error_detail.exc_info()

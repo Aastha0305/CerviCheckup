@@ -1,10 +1,12 @@
 from flask import Flask,render_template,request
 import numpy as np
 import pandas as pd
-
 from sklearn.preprocessing import StandardScaler
-from src.pipelines.test_pipeline import Predict_pipeline
-from src.pipelines.test_pipeline import CustomData
+import os
+import sys
+sys.path.insert(0, 'C:/Users/Jatin/Desktop/Aastha/Python-ml/project')
+from src.Pipelines.test_pipeline import Predict_pipeline
+from src.Pipelines.test_pipeline import CustomData
 application = Flask(__name__)
 app = application
 

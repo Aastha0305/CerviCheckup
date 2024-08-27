@@ -1,0 +1,8 @@
+[ 2024-08-27 00:30:02,529 ] 26 root - INFO - Entered the Data Ingestion method or componenet
+[ 2024-08-27 00:30:02,568 ] 29 root - INFO - Read the data set
+[ 2024-08-27 00:30:02,618 ] 33 root - INFO - Train test split initiated
+[ 2024-08-27 00:30:02,669 ] 37 root - INFO - Data Ingestion completed
+[ 2024-08-27 00:30:02,775 ] 99 root - INFO - Read the training and test data completed
+[ 2024-08-27 00:30:02,775 ] 100 root - INFO - obtaining preprocessing object
+[ 2024-08-27 00:30:02,775 ] 82 root - INFO - Features : ['Age', 'Number of sexual partners', 'First sexual intercourse', 'Num of pregnancies', 'Smokes', 'Smokes (years)', 'Smokes (packs/year)', 'Hormonal Contraceptives', 'Hormonal Contraceptives (years)', 'IUD', 'IUD (years)', 'STDs', 'STDs (number)', 'STDs:condylomatosis', 'STDs:cervical condylomatosis', 'STDs:vaginal condylomatosis', 'STDs:vulvo-perineal condylomatosis', 'STDs:syphilis', 'STDs:pelvic inflammatory disease', 'STDs:genital herpes', 'STDs:molluscum contagiosum', 'STDs:AIDS', 'STDs:HIV', 'STDs:Hepatitis B', 'STDs:HPV', 'STDs: Number of diagnosis', 'STDs: Time since first diagnosis', 'STDs: Time since last diagnosis', 'Dx:CIN', 'Dx:HPV', 'Dx', 'Hinselmann', 'Schiller', 'Citology', 'Biopsy']
+[ 2024-08-27 00:30:02,786 ] 107 root - INFO - Applying preprocessing object on training and testing dataframe

@@ -2,6 +2,8 @@
 
 import os
 import sys
+sys.path.insert(0, 'C:/Users/Jatin/Desktop/Aastha/Python-ml/project')
+
 import pandas# noqa: F401
 import numpy# noqa: F401
 import dill  # noqa: F401

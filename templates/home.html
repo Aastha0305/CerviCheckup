@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cervical Cancer Prediction Model</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('img.jfif'); /* Add your background image URL */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            margin-top: 20px;
+        }
+        .mb-3 {
+            margin-bottom: 20px;
+        }
+        .form-label {
+            font-weight: bold;
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .btn {
+            padding: 10px 20px;
+            background-color: #007bff; /* Blue color for button */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #0056b3; /* Darker shade of blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cervical Cancer Risk Prediction</h1>
+        <h2>Enter Your Data</h2>
+        <form action="{{ url_for('predict_datapoint')}}" method="post">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            <label for="num_sexual_partners">Number of sexual partners:</label>
+            <input type="number" id="num_sexual_partners" name="num_sexual_partners" required>
+            <label for="first_sexual_intercourse">First sexual intercourse:</label>
+            <input type="number" id="first_sexual_intercourse" name="first_sexual_intercourse" required>
+            <label for="num_pregnancies">Number of pregnancies:</label>
+            <input type="number" id="num_pregnancies" name="num_pregnancies" required>
+            <label for="smokes">Smokes:</label>
+            <input type="number" id="smokes" name="smokes" required>
+            <label for="smokes_years">Smokes (years):</label>
+            <input type="number" id="smokes_years" name="smokes_years" required>
+            <label for="smokes_packs_per_year">Smokes (packs/year):</label>
+            <input type="number" id="smokes_packs_per_year" name="smokes_packs_per_year" required>
+            <label for="hormonal_contraceptives">Hormonal Contraceptives:</label>
+            <input type="number" id="hormonal_contraceptives" name="hormonal_contraceptives" required>
+            <label for="hormonal_contraceptives_years">Hormonal Contraceptives (years):</label>
+            <input type="number" id="hormonal_contraceptives_years" name="hormonal_contraceptives_years" required>
+            <label for="iud">IUD:</label>
+            <input type="number" id="iud" name="iud" required>
+            <label for="iud_years">IUD (years):</label>
+            <input type="number" id="iud_years" name="iud_years" required>
+            <label for="stds">STDs:</label>
+            <input type="number" id="stds" name="stds" required>
+            <label for="stds_number">STDs (number):</label>
+            <input type="number" id="stds_number" name="stds_number" required>
+            <label for="stds_condylomatosis">STDs:condylomatosis:</label>
+            <input type="number" id="stds_condylomatosis" name="stds_condylomatosis" required>
+            <label for="stds_cervical_condylomatosis">STDs:cervical condylomatosis:</label>
+            <input type="number" id="stds_cervical_condylomatosis" name="stds_cervical_condylomatosis" required>
+            <label for="stds_vaginal_condylomatosis">STDs:vaginal condylomatosis:</label>
+            <input type="number" id="stds_vaginal_condylomatosis" name="stds_vaginal_condylomatosis" required>
+            <label for="stds_vulvo_perineal_condylomatosis">STDs:vulvo-perineal condylomatosis:</label>
+            <input type="number" id="stds_vulvo_perineal_condylomatosis" name="stds_vulvo_perineal_condylomatosis" required>
+            <label for="stds_syphilis">STDs:syphilis:</label>
+            <input type="number" id="stds_syphilis" name="stds_syphilis" required>
+            <label for="stds_pelvic_inflammatory_disease">STDs:pelvic inflammatory disease:</label>
+            <input type="number" id="stds_pelvic_inflammatory_disease" name="stds_pelvic_inflammatory_disease" required>
+            <label for="stds_genital_herpes">STDs:genital herpes:</label>
+            <input type="number" id="stds_genital_herpes" name="stds_genital_herpes" required>
+            <label for="stds_molluscum_contagiosum">STDs:molluscum contagiosum:</label>
+            <input type="number" id="stds_molluscum_contagiosum" name="stds_molluscum_contagiosum" required>
+            <label for="stds_aids">STDs:AIDS:</label>
+            <input type="number" id="stds_aids" name="stds_aids" required>
+            <label for="stds_hiv">STDs:HIV:</label>
+            <input type="number" id="stds_hiv" name="stds_hiv" required>
+            <label for="stds_hepatitis_b">STDs:Hepatitis B:</label>
+            <input type="number" id="stds_hepatitis_b" name="stds_hepatitis_b" required>
+            <label for="stds_hpv">STDs:HPV:</label>
+            <input type="number" id="stds_hpv" name="stds_hpv" required>
+            <label for="stds_number_of_diagnosis">STDs: Number of diagnosis:</label>
+            <input type="number" id="stds_number_of_diagnosis" name="stds_number_of_diagnosis" required>
+            <label for="stds_time_since_first_diagnosis">STDs: Time since first diagnosis:</label>
+            <input type="number" id="stds_time_since_first_diagnosis" name="stds_time_since_first_diagnosis" required>
+            <label for="stds_time_since_last_diagnosis">STDs: Time since last diagnosis:</label>
+            <input type="number" id="stds_time_since_last_diagnosis" name="stds_time_since_last_diagnosis" required>
+            <label for="dx_cin">Dx:CIN:</label>
+            <input type="number" id="dx_cin" name="dx_cin" required>
+            <label for="dx_hpv">Dx:HPV:</label>
+            <input type="number" id="dx_hpv" name="dx_hpv" required>
+            <label for="dx">Dx:</label>
+            <input type="number" id="dx" name="dx" required>
+            <label for="hinselmann">Hinselmann:</label>
+            <input type="number" id="hinselmann" name="hinselmann" required>
+            <label for="schiller">Schiller:</label>
+            <input type="number" id="schiller" name="schiller" required>
+            <label for="citology">Citology:</label>
+            <input type="number" id="citology" name="citology" required>
+            <label for="biopsy">Biopsy:</label>
+            <input type="number" id="biopsy" name="biopsy" required>
+            <input type="submit" value="Predict">
+        </form>
+        <h2>Prediction: {{ results }}</h2>
+    </div>
+</body>
+</html>

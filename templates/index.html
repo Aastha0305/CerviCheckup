@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cervical Cancer Prediction Model</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .button {
+            display: block;
+            width: 250px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        form {
+            margin: 20px 0;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cervical Cancer Prediction Model</h1>
+
+        <h2>Model Evaluation Metrics</h2>
+        <p>Our cervical cancer prediction model has been evaluated using various machine learning algorithms. Below are the key metrics:</p>
+        <table>
+            <tr>
+                <th>Algorithm</th>
+                <th>Validated Accuracy</th>
+            </tr>
+            <tr>
+                <td>Decision Tree</td>
+                <td>98.34%</td>
+            </tr>
+            <tr>
+                <td>RandomForest</td>
+                <td>99.40%</td>
+            </tr>
+            <tr>
+                <td>Logistic Regression</td>
+                <td>99.09%</td>
+            </tr>
+            <tr>
+                <td>AdaBoost</td>
+                <td>98.72%</td>
+            </tr>
+            <tr>
+                <td>KNN</td>
+                <td>98.19</td>
+            </tr>
+            <tr>
+                <td>SVM</td>
+                <td>99.47%</td>
+            </tr>
+            <tr>
+                <td>Naive Bayes</td>
+                <td>67.67%</td>
+            </tr>
+        </table>
+
+        <h2>Feature Information</h2>
+        <p>The prediction model uses the following 35 numerical features:</p>
+        <ul>
+            <li>Age</li>
+            <li>Number of sexual partners</li>
+            <li>First sexual intercourse</li>
+            <li>Num of pregnancies</li>
+            <li>Smokes</li>
+            <li>Smokes (years)</li>
+            <li>Smokes (packs/year)</li>
+            <li>Hormonal Contraceptives</li>
+            <li>Hormonal Contraceptives (years)</li>
+            <li>IUD</li>
+            <li>IUD (years)</li>
+            <li>STDs </li>
+            <li>STDs (number) </li>
+            <li>STDs:condylomatosis</li>
+            <li>STDs:cervical condylomatosis</li>
+            <li>STDs:vaginal condylomatosis </li>
+            <li>STDs:vulvo-perineal condylomatosis</li>
+            <li>STDs:syphilis</li>
+            <li>STDs:pelvic inflammatory disease</li>
+            <li>STDs:genital herpes </li>
+            <li>STDs:molluscum contagiosum</li>
+            <li>STDs:AIDS</li>
+            <li>STDs:HIV</li>
+            <li>STDs:Hepatitis B</li>
+            <li>STDs:HPV</li>
+            <li>STDs: Number of diagnosis</li>
+            <li>STDs: Time since first diagnosis</li>
+            <li> STDs: Time since last diagnosis</li>
+            <li>Dx:CIN</li>
+            <li>Dx:HPV</li>
+            <li>Dx</li>
+            <li>Hinselmann</li>
+            <li>Schiller</li>
+            <li>Citology</li>
+            <li>Biopsy</li>
+        </ul>
+
+        <h2>Predict Your Cervical Cancer Risk</h2>
+        
+
+        <a class="button" href="/predictdata">Predict Your Cancer Risk</a>
+    </div>
+</body>
+</html>
