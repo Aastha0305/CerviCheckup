@@ -30,4 +30,4 @@ Cervical cancer is the fourth most common cancer. The highest rates of cervical 
 	•	Pandas
 	•	NumPy
 	•	Matplotlib
-	•	Jupyter Notebook
+	•	Google Collab
