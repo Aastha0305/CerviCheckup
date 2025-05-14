@@ -17,11 +17,6 @@ Cervical cancer is the fourth most common cancer. The highest rates of cervical 
 - Utilizes advanced machine learning algorithms
 - Provides interpretable results for medical professionals
 
-## Team Members and Contributions
-
-	•	Aniya Modi: Data preprocessing and feature engineering.
-	•	Aastha Luthra: Model development and tuning.
-	•	Bhumika Yadav: Evaluation and interpretation of model results.
 
 ## Technologies Used
 
