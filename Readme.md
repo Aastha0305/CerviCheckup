@@ -6,7 +6,6 @@ A machine learning model developed to predict cervical cancer, aimed at aiding e
 **Table of Contents:**
 - [Introduction](#introduction)
 - [Features](#features)
-- [Team Members and Contributions](#team-members-and-contributions)
 - [Technologies Used](#technologies-used)
 
 ## Introduction
