@@ -1,6 +1,0 @@
-[ 2024-08-27 00:21:15,385 ] 26 root - INFO - Entered the Data Ingestion method or componenet
-[ 2024-08-27 00:21:15,435 ] 29 root - INFO - Read the data set
-[ 2024-08-27 00:21:15,451 ] 33 root - INFO - Train test split initiated
-[ 2024-08-27 00:21:15,485 ] 37 root - INFO - Data Ingestion completed
-[ 2024-08-27 00:21:15,535 ] 97 root - INFO - Read the training and test data completed
-[ 2024-08-27 00:21:15,535 ] 98 root - INFO - obtaining preprocessing object
